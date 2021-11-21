@@ -51,6 +51,7 @@ spec:
                 value: "shop_session-id=x-liveness-probe"
           securityContext:
             readOnlyRootFilesystem: true
+            privileged: true
           env:
           - name: PORT
             value: "8080"
@@ -80,6 +81,7 @@ spec:
           #   value: "jaeger-collector:14268"
           # - name: CYMBAL_BRANDING
           #   value: "true"
+          
        
 ---
 apiVersion: v1
