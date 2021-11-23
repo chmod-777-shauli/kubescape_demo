@@ -50,8 +50,8 @@ spec:
               - name: "Cookie"
                 value: "shop_session-id=x-liveness-probe"
           securityContext:
-            readOnlyRootFilesystem: false
-            privileged: true
+            #readOnlyRootFilesystem: true
+            privileged: false
           env:
           - name: PORT
             value: "8080"
